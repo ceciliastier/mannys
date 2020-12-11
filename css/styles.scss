@@ -1,0 +1,157 @@
+//MIXINS
+@mixin button($color, $margin) {
+	background-color: transparent;
+	border: 1px solid $color;
+	border-radius: 20px;
+	padding: 8px 20px;
+	margin: $margin;
+	width: 125px;
+	a{
+		color: $color;
+	}
+}
+
+// GLOBAL STYLES
+body{
+	background-color: #EFEFEA;
+	.wrapper{
+		max-width: 85%;
+		margin: 0 auto;
+		height: 100%;
+		h2, h3{
+			text-align: center;
+		}
+	}
+	img{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+// HEADER STYLES
+header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero.JPG);
+	background-repeat: no-repeat;
+	background-position: 90% 90%;
+	background-size: 200%;
+	width: 100%;
+	.flex-logo-nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		//padding-top: 5%;
+		h1{
+			text-indent: -10000px;
+			background-image: url(/img/whiteM.PNG);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 75px;
+		}
+		nav{
+			h2{
+				text-indent: -10000px;
+				background-image: url(/img/menu.PNG);
+				background-position: center;
+				background-size: 100%;
+				background-repeat: no-repeat;
+				width: 35px;
+				height: 35px;
+			}
+			ul{
+				display: none;
+			}
+		}
+	}
+	.hero-txt{
+		text-align: center;
+		color: #fff;
+		padding: 10% 5% 20%;
+		h2{
+			padding: 8% 0 5%;
+			margin: 0;
+		}
+		button{
+			@include button(#fff, 5%)
+		}
+	}
+}
+// OFFERINGS SECTION STYLES
+.offerBtns{
+	display: flex;
+	justify-content: center;
+	button{
+		@include button(#000, 0 2%)
+	}
+}
+
+// SLICK SLIDER STYLES
+.slick{
+	position: relative;
+	button{
+		top: 40%;
+	}
+}
+.slick-slide {
+	margin: 0 10px;
+	img{
+		opacity: 0.5;
+		transition: .5s ease-in-out;
+	}
+  }
+.slick-list {
+	margin: 0px -10px 0px -10px;
+}
+.slick-current{
+	img{
+		opacity: 1;
+	}
+}
+.slick-next.slick-arrow::before, .slick-prev.slick-arrow::before{
+	color: #000;
+}
+
+// MAIN
+main section{
+	margin: 20% 0;
+	h2{
+		margin: 10%;
+	}
+	h4{
+		margin: 2% 0;
+	}
+	p{
+		margin: 2% 0 10%;
+	}
+}
+
+//FOOTER
+footer{
+	background-color: #b6b6b3;
+	text-align: center;
+	padding: 10%;
+	font-size: 0.75em;
+	p{
+		font-size: 0.75em;
+		line-height: 1.5em;
+		color: rgb(59, 59, 59);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
