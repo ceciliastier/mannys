@@ -1,0 +1,22 @@
+header{
+    grid-template-columns: 8fr 1fr 1fr;
+    .logo{
+        height: 5vh;
+    }
+}
+nav{
+    position: fixed;
+    display: block;
+    width: 0;
+    transition: 0.2s;
+    left: auto;
+    right: -1px;
+    top: 8vh;
+    height: 95vh;
+    ul{
+        height: 50vh;
+    }
+}
+.expand{
+    width: 50%;
+}

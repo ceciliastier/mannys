@@ -1,0 +1,55 @@
+/*banners*/ 
+.menu-banner{
+    padding: 3% 0 1.5%;
+    margin: 8% 10% 0;
+    background: none;
+    background-color: #fff;
+    h1{
+        font-size: 4em;
+        color: #000;
+    }
+}
+
+/*layout*/ 
+.menu-section{
+    margin: 0 10% 8%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 6% 3%;
+    section{
+        margin-top: 0;
+    }
+}
+.grid-menu{
+    h2{
+        margin-bottom: 11.5%;
+    }
+}
+.menu-tabs{
+    margin: 0 10%;
+    background-color: #fff;
+    padding: 3% 12% 0;
+    .underline{
+        height: 4px;
+        width: 15%;
+        margin-left: 5%;
+    }
+}
+.menu-page{
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)), 
+    url(/assets/img/menu-banner2.jpg)
+    50% 0  / 125% 
+    no-repeat fixed;
+}
+
+.full-width{
+    .no-desc-menu{
+        margin: 0;
+        section{
+            margin: 3% 6%;
+            padding-bottom: 3%;
+        }
+    }
+}
